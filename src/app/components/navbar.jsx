@@ -20,7 +20,12 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center px-5 py-5 bg-slate-900 ">
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-row justify-between items-center px-5 py-5 bg-slate-900 "
+      >
         <span className="text-green-400 text-[25px]">
           <Image src={"/logo.jpg"} width={150} height={70} alt="logo"></Image>
         </span>
@@ -108,7 +113,7 @@ export default function Navbar() {
             alt="link"
           ></Image>
         </div>
-      </header>
+      </motion.header>
     </>
   );
 }
