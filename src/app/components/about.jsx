@@ -45,11 +45,11 @@ export default function About() {
 
   function changetext1() {
     setText(text1);
-    setTexttrack(true);
+    setTexttrack(false);
   }
   function changetext2() {
     setText(text2);
-    setTexttrack(false);
+    setTexttrack(true);
   }
 
   return (
